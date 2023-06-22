@@ -1,0 +1,19 @@
+#!/bin/bash
+
+verbose = 0
+copi = 0
+
+while  getopts vzcl:h: option; do
+case $option in
+v)
+verbose=1
+;;
+z)
+comprimido=1
+;;
+c)
+copi=1
+;;
+l)
+logfile=@OPTARG
+;;
